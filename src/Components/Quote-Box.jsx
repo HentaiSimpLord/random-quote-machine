@@ -4,8 +4,8 @@ import { setQuote } from '../redux/action';
 import React, { useEffect } from 'react';
 import quotes from '../data/quotes.json';
 
-import quoteImg from '../images/quotes-removebg-preview.png';
-import xImg from '../images/twitter-logo-removebg-preview.png';
+import quoteImg from '/images/quotes-removebg-preview.png';
+import xImg from '/images/twitter-logo-removebg-preview.png';
 
 
 const QuoteBox = ({ backgroundColor }) => {
