@@ -31,11 +31,11 @@ const QuoteBox = ({ backgroundColor }) => {
     return (
         <div className='QuoteApp' style={{ backgroundColor: backgroundColor }}>
             <div id='quote-box'>
-                <span id='text' style={{ color: backgroundColor }}><img src={ `${process.env.PUBLIC_URL}/images/quotes-removebg-preview.png` } alt='LOGO' style={{ width: 40, color: backgroundColor}}></img>{ text }</span>
+                <span id='text' style={{ color: backgroundColor }}><img src={ `${process.env.PUBLIC_URL}/public/images/quotes-removebg-preview.png` } alt='LOGO' style={{ width: 40, color: backgroundColor}}></img>{ text }</span>
                 <span id='author' style={{ color: backgroundColor }}>{ author }</span>
                 <div className='container'>
                     <a id='tweet-quote' target='_top' href={ tweetQuote }>
-                        <img src={ `${process.env.PUBLIC_URL}/images/twitter-logo-removebg-preview.png` } alt='Twitter-LOGO' style={{ width: 30 }}></img>
+                        <img src={ `${process.env.PUBLIC_URL}/public/images/twitter-logo-removebg-preview.png` } alt='Twitter-LOGO' style={{ width: 30 }}></img>
                     </a>
                     <button id='new-quote' style={{ backgroundColor: backgroundColor }} onClick={handleNewQuote}>New Quote</button>
                 </div>
