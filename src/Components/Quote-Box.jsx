@@ -31,7 +31,7 @@ const QuoteBox = ({ backgroundColor }) => {
     return (
         <div className='QuoteApp' style={{ backgroundColor: backgroundColor }}>
             <div id='quote-box'>
-                <span id='text' style={{ color: backgroundColor }}><img src='/images/quotes-removebg-preview.png' alt='LOGO' style={{ width: 40, color: backgroundColor}}></img>{ text }</span>
+                <span id='text' style={{ color: backgroundColor }}><img src='../images/quotes-removebg-preview.png' alt='LOGO' style={{ width: 40, color: backgroundColor}}></img>{ text }</span>
                 <span id='author' style={{ color: backgroundColor }}>{ author }</span>
                 <div className='container'>
                     <a id='tweet-quote' target='_top' href={ tweetQuote }>
