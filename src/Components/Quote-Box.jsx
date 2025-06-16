@@ -4,6 +4,9 @@ import { setQuote } from '../redux/action';
 import React, { useEffect } from 'react';
 import quotes from '../data/quotes.json';
 
+import quoteImg from '/public/images/quotes-removebg-preview.png';
+import xImg from '/public/images/twitter-logo-removebg-preview.png';
+
 
 const QuoteBox = ({ backgroundColor }) => {
     const { text, author } = useSelector((state) => state);
@@ -31,11 +34,11 @@ const QuoteBox = ({ backgroundColor }) => {
     return (
         <div className='QuoteApp' style={{ backgroundColor: backgroundColor }}>
             <div id='quote-box'>
-                <span id='text' style={{ color: backgroundColor }}><img src='/images/quotes-removebg-preview.png' alt='LOGO' style={{ width: 40, color: backgroundColor}}></img>{ text }</span>
+                <span id='text' style={{ color: backgroundColor }}><img src={ quoteImg } alt='LOGO' style={{ width: 40, color: backgroundColor}}></img>{ text }</span>
                 <span id='author' style={{ color: backgroundColor }}>{ author }</span>
                 <div className='container'>
                     <a id='tweet-quote' target='_top' href={ tweetQuote }>
-                        <img src='/images/twitter-logo-removebg-preview.png' alt='Twitter-LOGO' style={{ width: 30 }}></img>
+                        <img src={ xImg } alt='Twitter-LOGO' style={{ width: 30 }}></img>
                     </a>
                     <button id='new-quote' style={{ backgroundColor: backgroundColor }} onClick={handleNewQuote}>New Quote</button>
                 </div>
